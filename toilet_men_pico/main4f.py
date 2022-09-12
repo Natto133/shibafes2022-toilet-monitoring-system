@@ -1,4 +1,4 @@
-#4F women
+#4F men
 import time
 from machine import Pin,UART
 import _thread
