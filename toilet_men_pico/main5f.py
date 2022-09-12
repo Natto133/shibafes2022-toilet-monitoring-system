@@ -1,4 +1,4 @@
-#6F men
+#F men
 import time
 from machine import Pin,UART
 import _thread
