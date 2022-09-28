@@ -1,4 +1,4 @@
-#4F women
+#2F women
 import time
 from machine import Pin,UART
 import _thread
@@ -13,38 +13,37 @@ def sensor():
     led=Pin(25, Pin.OUT)
     led_panel=Pin(22, Pin.OUT)
 
-    #TX to 3F TX=GP0/RX=GP1 baudrate11520
-    #RX from 5F TX=GP0/RX=GP1 baudrate11520
+    #RX from 3F TX=GP0/RX=GP1 baudrate11520
     uart = UART(0)
 
     while(True):
-        #RX from 5F
+        #RX from 3F
         if uart.any() > 0:
-            floor5 = str(uart.read(17)).strip("b\'\'")
-            if floor5[0] != "1":
+            floor3 = str(uart.read(34)).strip("b\'\'")
+            if floor3[0] != "1":
                 continue
-            floor5 = int(floor5, 2)
-            print(bin(floor5))
+            floor3 = int(floor3, 2)
+            print(bin(floor3))
             led_panel.value(1)
             led.value(1)
             
             
             #check doors
-            floor4 = 0b1
+            floor2 = 0b1
             
-            floor4 = floor4 << 1
-            floor4 = floor4 | toilet1.value()
-            floor4 = floor4 << 1
-            floor4 = floor4 | toilet2.value()
-            floor4 = floor4 << 1
-            floor4 = floor4 | toilet3.value()
-            floor4 = floor4 << 1
-            floor4 = floor4 | toilet4.value()
+            floor2 = floor2 << 1
+            floor2 = floor2 | toilet1.value()
+            floor2 = floor2 << 1
+            floor2 = floor2 | toilet2.value()
+            floor2 = floor2 << 1
+            floor2 = floor2 | toilet3.value()
+            floor2 = floor2 << 1
+            floor2 = floor2 | toilet4.value()
         
-            print(bin(floor4))
+            print(bin(floor2))
             
-            floor5 = floor5 << 5
-            floorAll = floor5 | floor4
+            floor3 = floor3 << 5
+            floorAll = floor3 | floor2
             print(bin(floorAll))
             uart.write('{:b}'.format(floorAll))
         
@@ -86,7 +85,6 @@ def receive():
     led_3_4.value(0)
     led_2_1.value(0)
     led_2_2.value(0)
-
 
 
     while(True):
@@ -156,7 +154,6 @@ def receive():
 
 
                 print(bin(all))
-
 
 second_thread = _thread.start_new_thread(receive, ())
 

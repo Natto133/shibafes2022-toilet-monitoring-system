@@ -30,6 +30,19 @@
 | GP8 | toilet3 Signal |
 | GP9 | toilet4 Signal |
 | 3V3 | toilet GND | 
+| GP22 | access LED | 
+| GP2 | panel LED 6-1 |
+| GP3 | panel LED 6-2 |
+| GP10 | panel LED 5-1 |
+| GP11 | panel LED 5-2 |
+| GP12 | panel LED 5-3 |
+| GP13 | panel LED 5-4 |
+| GP14 | panel LED 4-1 |
+| GP15 | panel LED 4-2 |
+| GP16 | panel LED 3-1 |
+| GP17 | panel LED 3-2 |
+| GP18 | panel LED 3-3 |
+| GP19 | panel LED 3-4 |
 | GND | 各フロア共通GND |
 
 ### women 3F 
@@ -50,6 +63,17 @@
 | GP20 | toilet**9** Signal |
 | GP21 | toilet**8** Signal |
 | 3V3 | toilet GND | 
+| GP22 | access LED | 
+| GP2 | panel LED 6-1 |
+| GP3 | panel LED 6-2 |
+| GP15 | panel LED 5-1 |
+| GP16 | panel LED 5-2 |
+| GP17 | panel LED 5-3 |
+| GP26 | panel LED 5-4 |
+| GP13 | panel LED 4-1 |
+| GP14 | panel LED 4-2 |
+| GP27 | panel LED 2-1 |
+| GP28 | panel LED 2-2 |
 | GND | 各フロア共通GND |
 
 ### women 4F 
@@ -63,6 +87,19 @@
 | GP8 | toilet3 Signal |
 | GP9 | toilet4 Signal |
 | 3V3 | toilet GND | 
+| GP22 | access LED | 
+| GP2 | panel LED 6-1 |
+| GP3 | panel LED 6-2 |
+| GP10 | panel LED 5-1 |
+| GP11 | panel LED 5-2 |
+| GP12 | panel LED 5-3 |
+| GP13 | panel LED 5-4 |
+| GP16 | panel LED 3-1 |
+| GP17 | panel LED 3-2 |
+| GP18 | panel LED 3-3 |
+| GP19 | panel LED 3-4 |
+| GP20 | panel LED 2-1 |
+| GP21 | panel LED 2-2 |
 | GND | 各フロア共通GND |
 
 ### women 5F 
@@ -83,6 +120,17 @@
 | GP20 | toilet**9** Signal |
 | GP21 | toilet**8** Signal |
 | 3V3 | toilet GND | 
+| GP22 | access LED | 
+| GP2 | panel LED 6-1 |
+| GP3 | panel LED 6-2 |
+| GP13 | panel LED 4-1 |
+| GP14 | panel LED 4-2 |
+| GP15 | panel LED 3-1 |
+| GP16 | panel LED 3-2 |
+| GP17 | panel LED 3-3 |
+| GP26 | panel LED 3-4 |
+| GP27 | panel LED 2-1 |
+| GP28 | panel LED 2-2 |
 | GND | 各フロア共通GND |
 
 ### women 6F 
@@ -96,6 +144,19 @@
 | GP8 | toilet3 Signal |
 | GP9 | toilet4 Signal |
 | 3V3 | toilet GND | 
+| GP22 | access LED | 
+| GP10 | panel LED 5-1 |
+| GP11 | panel LED 5-2 |
+| GP12 | panel LED 5-3 |
+| GP13 | panel LED 5-4 |
+| GP14 | panel LED 4-1 |
+| GP15 | panel LED 4-2 |
+| GP16 | panel LED 3-1 |
+| GP17 | panel LED 3-2 |
+| GP18 | panel LED 3-3 |
+| GP19 | panel LED 3-4 |
+| GP20 | panel LED 2-1 |
+| GP21 | panel LED 2-2 |
 | GND | 各フロア共通GND |
 
 ### men 2F 
